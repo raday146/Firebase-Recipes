@@ -1,5 +1,6 @@
 class Firecast{
  
+ // ADD YOUR SERVERLESS INFO 
     constructor(){
          this.firebaseConfig = {
             apiKey: "",
