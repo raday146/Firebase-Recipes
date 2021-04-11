@@ -2,13 +2,13 @@ class Firecast{
  
     constructor(){
          this.firebaseConfig = {
-            apiKey: "AIzaSyDnivTF3vVIIe7TAbN73Xzg54rOK_D-uGo",
-            authDomain: "js-project-2ae43.firebaseapp.com",
-            projectId: "js-project-2ae43",
-            storageBucket: "js-project-2ae43.appspot.com",
-            messagingSenderId: "154149386417",
-            appId: "1:154149386417:web:2f05286645ae7012010a90",
-            measurementId: "G-8RZE703PSW"
+            apiKey: "",
+            authDomain: "",
+            projectId: "",
+            storageBucket: "",
+            messagingSenderId: "",
+            appId: "",
+            measurementId: ""
           };
           firebase.initializeApp(this.firebaseConfig);
           this.db = firebase.firestore();
