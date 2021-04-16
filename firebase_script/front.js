@@ -1,6 +1,9 @@
-const list = document.querySelector('ul');
+const list = document.querySelector('.list');
 const form = document.querySelector('form');
 const button = document.querySelector('.unsubBtn');
+const nav = document.querySelector('.ham-menu');
+const navList = document.querySelector('.nav2');
+
 const firecast = new Firecast();
 
 const addRecipes = (recipe, id) =>{
@@ -24,7 +27,7 @@ const addRecipes = (recipe, id) =>{
         list.textContent = ``;
     }
     list.innerHTML += html;
-    scrollBy(0,window.screenY);
+    scrollBy(0,120);
 }
 
 const deleteRecipe = (id) =>{
@@ -72,3 +75,28 @@ function checkList(){
         list.textContent = ``;
     }
 }
+
+const toggleNav = () =>{
+    navList.classList.toggle('pop-nav-list');
+
+};
+nav.addEventListener('click', () =>{
+    toggleNav();
+});
+navList.addEventListener('click', e =>{
+    const tabs = document.querySelector('.exmp-recipe');    
+    Array.from(tabs.children).forEach(tab => {
+            tab.classList.remove('active');
+    });
+    const tab = tabs.querySelectorAll(`#${e.target.textContent}`);
+    console.log(tab.children);
+    tab.forEach(t =>{
+        t.classList.add('active');
+    });
+    toggleNav();
+    setTimeout(() => scrollBy(0, window.screenY +window.screenX), 500);
+    //scrollBy(0,window.screenY +100);
+    //tabs.classList.remove('active');
+
+    
+});

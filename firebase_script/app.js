@@ -2,6 +2,7 @@
 const list = document.querySelector('ul');
 const form = document.querySelector('form');
 const button = document.querySelector('.unsubBtn');
+const section = document.querySelector('section');
 
 const addRecipes = (recipe, id) =>{
     let time = recipe.created.toDate();

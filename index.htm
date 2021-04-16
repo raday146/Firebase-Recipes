@@ -10,24 +10,135 @@
 
 </head>
 <body>
-    <hr class="rounded"> 
+   <header>
+       <img src="/chapter16/img/wheat-1845835_1920.jpg" class="bl-background" alt="">
+       <div class="shadow"></div>
+       <nav>
+           <div class="header-container">
+               <h3 class="logo"><span>Recipe</span>List</h3>
+               <div class="ham-menu my-4">
+                   <div class="bar"></div>
+               </div>
+           </div>
+           <div class="nav2">
+               <ul class="nav-list">
+                 <li>
+                    <a href="#" class="link" data-target="#breakfast">Breakfast</a> 
+                </li>
+                   <li>
+                    <a href="#"  class="link" data-target="#hamburger" >Hamburger</a>
+                   </li>
+                   <li>
+                    <a href="#"  class="link" data-target="#pizza">Pizza</a>
+                   </li>
+                   <li>
+                    <a href="#"  class="link" data-target="#pancake">Pancake</a>
+                   </li>               
+               </ul>
+           </div>
+           <hr class="rounded"> 
+       </nav>
+   </header>
+   
     <div class="b-cont my-3">
+        
         <h1 class="text-center text-light ">Recipes</h1>
-        <hr class="rounded"> 
     </div>
-    <hr class="rounded"> 
     <div class="container my-5">
-        <ul>
+        <ul class="list">
         </ul>
         <form>
             <hr class="rounded"> 
             <div class="input-group">
-                <input type="text" class="form-control" id=recipe required>
+                <input type="text" class="form-control " id=recipe required>
                 <div class="input-group-append">
                     <input type="submit" value="add" class="btn btn-outline-secondary" placeholder="Add A new recipe">
                 </div>
             </div>
         </form>
+        <div class="fav-food my-4">
+            <ul class="food-imgs">
+                <li class="nav-trigger"  data-target="#breakfast">
+                 <img src="/chapter16/img/food/breakfast-1804457_640.jpg" alt="alq">
+                 
+                 <span>Breakfast</span>
+                </li>
+                <li class="nav-trigger"  data-target="#hamburger" >
+                 <img src="/chapter16/img/food/hamburger-494706_640.jpg" alt="">
+                 <span>Hamburger</span>
+                </li>
+                <li class="nav-trigger" data-target="#pizza" >
+                 <img src="/chapter16/img/food/pizza-3010062_640.jpg" class="nav-trigger" alt="">
+                 <span>Pizza</span>
+                </li>
+                <li class="nav-trigger" data-target="#pancake">
+                 <img src="/chapter16/img/food/pancake-1984716_640.jpg" class="nav-trigger" alt="">
+                 <span>Pancake</span>
+                </li>
+            </ul>
+        </div>
+        
+    <section>
+        <div class="exmp-recipe my-5">
+            <div id="breakfast" class="content active my-4">
+                <h3>Breakfast</h3>
+                <p class="text">
+                    Prepare the salsa: Set a grater in a large bowl; 
+                    grate the tomatoes and onion into the bowl. 
+                    Add the jalapeno, chopped garlic, hot sauce, cumin and salt and pepper to taste. 
+                    Heat a medium skillet over low heat and add 2 teaspoons olive oil. 
+                    Fry the salsa in the oil until it thickens slightly, 3 minutes. 
+                    Remove to a bowl and set aside. Add the beans to the same pan along with the 
+                    smashed garlic, 1/2 cup warm water and a pinch of salt; 
+                    cook over low heat until warmed through, smashing slightly with a fork. 
+                    Meanwhile, heat the remaining 2 tablespoons oil in another skillet. 
+                    Fry the eggs sunny-side up; season with pepper. Place 1 warm tortilla on each plate.
+                    Divide the beans among them, then top with a fried egg, some salsa and cheese. 
+                    Sprinklewith cilantro and serve with the remaining salsa.  
+                </p>
+            </div>
+            <img src="/chapter16/img/food/breakfast-1804457_640.jpg" id="breakfast" class="image active" alt="">
+            
+            <div id="hamburger" class="content active my-4">
+                <h3>Hamburger</h3>
+                <p class="text">
+                    Divide the meat into 4 portions (about 6 ounces each). 
+                    Using your hands, form each portion into a ball-shape by gently tossing it from 1 hand to the other. 
+                    (Don't over work or press too firmly on the meat.)
+                    Gently form each portion into a patty about 3 1/2 inches wide and 1-inch-thick. 
+                </p>
+            </div>
+            <img src="/chapter16/img/food/hamburger-494706_640.jpg" id="hamburger" class="image active" alt="">
+
+            <div id="pizza" class="content active my-4">
+                <h3>Pizza</h3>
+                <p class="text">
+
+                    Place the pizza stone or tile onto the bottom of a cold oven and turn the oven to its highest temperature, 
+                    about 500 degrees F. If the oven has coils on the oven floor, place the tile onto the lowest rack of the oven.
+                     Split the pizza dough into 2 equal parts using a knife or a dough scraper. 
+                     Flatten into a disk onto the countertop and then fold the dough into a ball. 
+                </p>
+            </div>
+            <img src="/chapter16/img/food/pizza-3010062_640.jpg" id="pizza" class="image active" alt="">
+
+            <div id="pancake" class="content active my-4">
+                <h3>Pancake</h3>
+                <p class="text">
+                    Coat a large nonstick skillet or griddle with cooking spray and heat over medium heat. 
+                    Working in batches, pour about 1/4 cup batter into the skillet for each pancake. 
+                    Cook until bubbly on top, about 4 minutes, then flip and cook until the other side is golden brown, 
+                    about 2 more minutes. Transfer the finished pancakes to a baking sheet and keep warm in the oven. 
+                    Serve the pancakes topped with the strawberry sauce; 
+                    top with butter, confectioners' sugar or whipped cream, if desired. 
+
+                </p>
+            </div>
+            <img src="/chapter16/img/food/pancake-1984716_640.jpg" id="pancake" class="image active" alt="">
+
+        </div>
+    </section>
+
     </div>
     
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
